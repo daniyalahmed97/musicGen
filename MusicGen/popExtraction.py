@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV into a DataFrame
-input_file = "midi_songs_cleaned_with_genres.csv"
+input_file = "Data/midi_songs_cleaned_with_genres.csv"
 df = pd.read_csv(input_file)
 
 # Create a copy for pop songs
@@ -27,7 +27,7 @@ pop_songs = pop_songs.sort_values(by="Pop Count", ascending=False)
 #pop_songs = pop_songs.drop(columns=["Pop Count"])
 
 # Save the filtered data to a new CSV file
-output_file = "pop_songs_data.csv"
+output_file = "Data/pop_songs_data.csv"
 pop_songs.to_csv(output_file, index=False)
 
 print(f"✅ Pop songs data saved to {output_file}")
