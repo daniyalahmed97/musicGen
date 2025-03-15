@@ -7,8 +7,8 @@ def ensure_directory_exists(directory):
     os.makedirs(directory, exist_ok=True)
 
 
-def generate_melody(bundle_path, config, output_dir="/tmp/melody_rnn/generated", num_outputs=10, num_steps=128,
-                    primer_melody="[60]"):
+def generate_melody_rnn(bundle_path, config, output_dir="/tmp/melody_rnn/generated", num_outputs=10, num_steps=128,
+                        primer_melody="[60]"):
     """
     Generates a melody using Magenta's MelodyRNN CLI tool.
 
