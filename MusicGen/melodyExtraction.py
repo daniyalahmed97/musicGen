@@ -109,3 +109,4 @@ def find_melody_track(midi_file_path, output_midi_path):
 midi_file_path = "Data/clean_midi/Alphaville/Big in Japan.mid"  # Replace with actual MIDI file
 melody_output_path = "isolated_melody.mid"
 find_melody_track(midi_file_path, melody_output_path)
+print("Success")
